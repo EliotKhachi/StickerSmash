@@ -1,9 +1,5 @@
-// Reference: https://docs.expo.dev/tutorial/introduction/
 import { StatusBar } from "expo-status-bar";
-import { StyleSheet, View } from "react-native";
-
-import ImageViewer from "./components/ImageViewer";
-import Button from "./components/Button";
+import { StyleSheet, Text, View, Image } from "react-native";
 
 const PlaceholderImage = require("./assets/images/background-image.png");
 
@@ -13,11 +9,8 @@ export default function App() {
       <View style={styles.imageContainer}>
         <ImageViewer placeholderImageSource={PlaceholderImage} />
       </View>
-      <View style={styles.footerContainer}>
-        <Button theme="primary" label="Choose a photo" />
-        <Button label="Use this photo" />
-      </View>
-      <StatusBar style="auto" />
+      <Text style={{ color: "#fff" }}>EXPO IS FUCKING AWESOME</Text>
+      {/* <LandingPage /> */}
     </View>
   );
 }
@@ -31,9 +24,5 @@ const styles = StyleSheet.create({
   imageContainer: {
     flex: 1,
     paddingTop: 58,
-  },
-  footerContainer: {
-    flex: 1 / 3,
-    alignItems: "center",
   },
 });

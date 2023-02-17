@@ -1,4 +1,3 @@
-// Reference: https://docs.expo.dev/tutorial/introduction/
 import { StatusBar } from "expo-status-bar";
 import { StyleSheet, View } from "react-native";
 
